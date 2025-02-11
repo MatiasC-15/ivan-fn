@@ -30,17 +30,14 @@ let tags = {
 }
 
 const defaultMenu = {
-  before:`......․⁀⸱⁀⸱︵⸌⸃૰⳹․☀︎․⳼૰⸂⸍︵⸱⁀⸱⁀․...
-𔓕꯭  ꯭ 𓏲꯭֟፝੭ ꯭⌑(꯭𝐄).꯭𝑾𝑬𝑳𝑪𝑶𝑴𝑬⌑꯭ 𓏲꯭֟፝੭ ꯭  ꯭𔓕
- ▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞
-『Bienvenido al menu de sumi sakurazawa』
+  before: `❀ꗥ～ꗥ❀ 𝐋𝐥𝐚𝐦𝐚𝐬, 𝐥𝐥𝐚𝐦𝐚𝐬, ¡𝐪𝐮𝐞 𝐭𝐨𝐝𝐨 𝐚𝐫𝐝𝐚 𝐜𝐨𝐧 𝐞𝐬𝐭𝐚 𝐝𝐚𝐦𝐚! ❀ꗥ～ꗥ❀
 
-“ Hola *%name* soy *sumi*, %greeting ”
+“ Hola *%name* soy *HuTao*, %greeting ”
 
 .    ╭─ׅ─ׅ┈ ─๋︩︪─☪︎︎︎̸⃘̸࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬🍧⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈ ─๋︩︪─╮
 ╭╼☁️⬪࣪ꥈ𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ 🄼🄴🄽🅄-🄱🄾🅃໑⃪࣭۪ٜ݊݊݊݊𑁍ꥈ࣪⬪☁️
 ┃֪࣪  ╰─ׅ─ׅ┈ ─๋︩︪─☪︎︎︎̸⃘̸࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬🍧⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈ ─๋︩︪─╯
-├ׁ̟̇❍✎ *🄲ʀᴇᴀᴅᴏʀ:* 👑 𝕷͢𝖊𝖔፝֟፝֟፝֟፝֟፝֟፝֟𝖓𝖊𝖑 👑
+├ׁ̟̇❍✎ *🄲ʀᴇᴀᴅᴏʀ:* ★彡( Ӿł_₥ł₲ɄɆⱠØ₦77ӾӾ )彡★
 ├ׁ̟̇❍✎ *🄼ᴏᴅᴏ:* Público
 ├ׁ̟̇❍✎ *🄱ᴀɪʟᴇʏs:* Multi Device
 ├ׁ̟̇❍✎ *🅃ɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:* %muptime
@@ -164,7 +161,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.catbox.moe/fht5in.mp4')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
 
   let category = "video"
   const db = './media/database/db.json'
@@ -180,7 +177,7 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.
 
 // await conn.reply(m.chat, '🍟 Enviando el menú.....', m, rcanal)
 
-await m.react('🌸') 
+await m.react('❤️‍🔥') 
 
 //await conn.sendFile(m.chat, imagen1, 'yaemori.jpg', text.trim(), fkontak, null, rcanal)
 
@@ -197,7 +194,7 @@ await conn.sendMessage(
     },
     forwardingScore: 999,
     externalAdReply: {
-      title: '🌸Sumi sakurazawa🌸',
+      title: '*＊✿❀𝐇𝐮𝐓𝐚𝐨-𝐌𝐃❀✿＊*',
       body: dev,
       thumbnailUrl: icono,
       sourceUrl: redes,
@@ -217,7 +214,7 @@ await conn.sendMessage(
 handler.help = ['menu']
 handler.tags = ['main']
 handler.command = ['menu', 'menú', 'help'] 
-handler.register = false
+handler.group =true
 
 export default handler
 
